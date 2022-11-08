@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-orange: hsl(25, 97%, 53%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-light-grey: hsl(217, 12%, 63%);
+    --color-medium-grey: hsl(216, 12%, 54%);
+    --color-dark-blue: hsl(213, 19%, 18%);
+    --color-very-dark-blue: hsl(216, 12%, 8%);
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--color-very-dark-blue);
+    color: var(--color-white);
+}
+
+.main-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.rate-container {
+    width: 480px;
+    padding: 4%;
+    margin: 4%;
+    background-color: var(--color-dark-blue);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.icon-star {
+    width: 50px;
+    height: 50px;
+    padding: 1rem;
+    background-color: hsl(214, 17%, 27%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.icon-star img {
+    width: 1.5rem;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;    
+}
+
+.info-container p {
+    color: var(--color-medium-grey);
+}
+
+.rate-scale {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rate-btn {
+    width: 50px;
+    height: 50px;
+    background-color: hsl(214, 17%, 27%);
+    border: none;
+    border-radius: 50%;
+    color: var(--color-medium-grey);
+}
+
+.rate-btn:hover {
+    background-color: var(--color-orange);
+    cursor: pointer;
+    color: var(--color-white);
+}
+
+.rate-btn-active {
+    background-color: var(--color-medium-grey);
+    color: var(--color-white);
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 1rem;
+    background-color: var(--color-orange);
+    border-radius: 20px;
+    border: none;
+    color: var(--color-white);
+}
+
+.btn-submit:hover {
+    background-color: var(--color-white);
+    color: var(--color-orange);
+    cursor: pointer;
+}
+
+.result-container {
+    width: 480px;
+    padding: 4%;
+    margin: 4%;
+    background-color: var(--color-dark-blue);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.thanks-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.result {
+    padding: 0.5rem 0.5rem 0.3rem 0.5rem;
+    color: var(--color-orange);
+    background-color: hsl(214, 17%, 27%);
+    border-radius: 20px;
+}
+
+.thanks-container p {
+    text-align: center;
+    color: var(--color-medium-grey);
+}
+
+.hidden {
+    display: none;
+}
